@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# How to run
 
-## Getting Started
+To run the project, execute the "npm run dev" command in the terminal, when the project is built, go to http://localhost:3000.
 
-First, run the development server:
+## features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- filtering of car models by their make(brand) and year
+- displaying the filtered cars on a separate page
+- ability to go back to filters page
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Architecture
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- / - main page, has the filter component.
+- /result/:makeId/:year - cards for car models, displayed as a grid
 
-## Learn More
+### Folder structure
 
-To learn more about Next.js, take a look at the following resources:
+- components: folder that contains miscelaneous components, or those that might be used across different pages in the future.
+- types: folder that contains typescript types
+- utils: folder that contains utility functions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tech stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js
+- React
+- Next.js
+- Tailwind css
+- TypeScript
+- ESlint
+- Prettier
