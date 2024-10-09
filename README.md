@@ -30,3 +30,11 @@ To run the project, execute the "npm run dev" command in the terminal, when the 
 - TypeScript
 - ESlint
 - Prettier
+
+## Things to improve
+
+- create a separate component for selects to make code more DRY
+- tailwind should have some functionality so that developer doesn't repeat all of the classes for every breakpoint
+- change default select values to something more descriptive (currently its just an empty string)
+- there might be a better way to create a list of years (currently created via for loop)
+- Create an animated loader (spinner would be great)
